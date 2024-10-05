@@ -36,3 +36,11 @@ print(f"media: {media:.2f}")
 metro = float(input("digite valor em metros: ")) 
 print (f"{metro*100} cm")
 
+#6)Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+raio = int(input("digite valor do raio de um círculo:")) 
+print (f"{3.14*(raio**2)} cm")
+
+#7)Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+lado = int(input("digite o valor do lado do quadrado: "))
+print (f"A area do quadrado é {lado**2} e o dobro é {(lado**2)*2}")
+
