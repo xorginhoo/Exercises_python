@@ -44,3 +44,31 @@ print (f"{3.14*(raio**2)} cm")
 lado = int(input("digite o valor do lado do quadrado: "))
 print (f"A area do quadrado é {lado**2} e o dobro é {(lado**2)*2}")
 
+"""
+8)Faça um Programa que pergunte quanto você ganha por hora e o número de horas
+trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+"""
+horasvalor = float(input("Digite o valor que ganha por hora: "))
+horastrabalhadas = float(input("Digite as horas trabalhadas no mês: "))
+
+print (f"Seu salário esse mês é de {horasvalor * horastrabalhadas}")
+
+"""
+9)Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a
+temperatura em graus Celsius.
+o C = 5 * ((F-32) / 9).
+"""
+
+F = float(input("Digite a temperatura em Fahrenheit: "))
+C = 5*((F-32)/9)
+
+print (f"a temperatura {F:.1f} fahrenheit em celsius é {C:.2f}")
+
+#10)Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit.
+
+C = float(input("Digite a temperatura em Celsius: "))
+F = C * (9/5) + 32
+
+print (f"a temperatura {C:.1f} Celsius em fahrenheit é {F:.2f}")
+
+
