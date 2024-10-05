@@ -31,3 +31,8 @@ n4 = float(input("Digite a nota da unidade 4: "))
 media = (n1 + n2 + n3 + n4)/4
  
 print(f"media: {media:.2f}")
+
+#5) Faça um Programa que converta metros para centímetros.
+metro = float(input("digite valor em metros: ")) 
+print (f"{metro*100} cm")
+
