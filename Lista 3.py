@@ -24,7 +24,7 @@ else:
      print(f"O {num1} e {num2} são iguais.")
 
 '''
-Considerando duas notas, como verificar se um aluno foi aprovado, reprovado ou está
+3.Considerando duas notas, como verificar se um aluno foi aprovado, reprovado ou está
 em recuperação?
 '''
 num1 = int(input("Digite a 1º nota:"))
@@ -42,7 +42,7 @@ else :
      print(f"{media} reprovado")
 
 """
-Desenvolva um programa que solicite a idade do usuário e informe se ele é
+4.Desenvolva um programa que solicite a idade do usuário e informe se ele é
 menor de idade (menos de 18 anos), adulto (18 a 60 anos) ou idoso (mais de 60
 anos).
 """
@@ -56,4 +56,17 @@ elif idade >= 18 and idade < 60:
 else:
     print("idoso")
     
-  
+"""
+5.Faça um programa que pergunte a nota de um aluno (de 0 a 10) e exiba
+"Aprovado" se a nota for 7 ou mais, "Reprovado" se a nota for 4 ou menos e
+"Recuperação" se estiver entre 4 e 7.
+"""
+
+num = int(input("digite a nota de um aluno (de 0 a 10): "))
+
+if num>=7:
+    print(f"{num} aprovado")
+elif num<7 and num>4 :
+     print(f"{num} recuperação")
+else :
+     print(f"{num} reprovado")
