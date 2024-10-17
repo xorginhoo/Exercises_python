@@ -70,3 +70,15 @@ elif num<7 and num>4 :
      print(f"{num} recuperação")
 else :
      print(f"{num} reprovado")
+
+"""
+6.Crie um programa que pergunte a idade do usuário e informe se ele pode votar
+(maior ou igual a 16 anos).
+"""
+
+idade = int(input("Digite sua idade: "))
+
+if idade >= 16:
+    print("pode votar")
+else:
+    print("NÃO PODE VOTAR")
