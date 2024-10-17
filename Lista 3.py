@@ -82,3 +82,49 @@ if idade >= 16:
     print("pode votar")
 else:
     print("NÃO PODE VOTAR")
+
+"""
+7.Escreva um programa que pergunte um número de 1 a 7 e informe o dia da
+semana correspondente (1 para Domingo, 2 para Segunda, etc.).
+"""
+
+numero = int(input("Digite um número de 1 a 7: "))
+
+if numero == 1:
+    print("Domingo")
+elif numero == 2:
+    print("Segunda-feira")
+elif numero == 3:
+    print("Terça-feira")
+elif numero == 4:
+    print("Quarta-feira")
+elif numero == 5:
+    print("Quinta-feira")
+elif numero == 6:
+    print("Sexta-feira")
+elif numero == 7:
+    print("Sábado")
+else:
+    print("Número inválido! Digite um número de 1 a 7.")
+
+"""
+8.Desenvolva um programa que solicite três lados e informe se é possível formar
+um triângulo e, se sim, se é equilátero, isósceles ou escaleno.
+"""
+
+n1 = int(input("Digite o 1º lado: "))
+n2 = int(input("Digite o 2º lado: "))
+n3 = int(input("Digite o 3º lado: "))
+
+
+if n1 + n2 > n3 and n1 + n3 > n2 and n2 + n3 > n1:
+
+    if n1 == n2 == n3:
+        print("O triângulo é equilátero.")
+    elif n1 == n2 or n1 == n3 or n2 == n3:
+        print("O triângulo é isósceles.")
+    else:
+        print("O triângulo é escaleno.")
+else:
+    print("Não é possível formar um triângulo.")
+
