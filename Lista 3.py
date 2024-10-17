@@ -40,4 +40,20 @@ elif media<7 and media>3 :
      
 else :
      print(f"{media} reprovado")
+
+"""
+Desenvolva um programa que solicite a idade do usuário e informe se ele é
+menor de idade (menos de 18 anos), adulto (18 a 60 anos) ou idoso (mais de 60
+anos).
+"""
+idade = int(input("Digite sua idade: "))
+
+if idade < 18:
+    print("de menor")
+
+elif idade >= 18 and idade < 60:
+    print("adulto")
+else:
+    print("idoso")
+    
   
