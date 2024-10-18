@@ -128,3 +128,18 @@ if n1 + n2 > n3 and n1 + n3 > n2 and n2 + n3 > n1:
 else:
     print("Não é possível formar um triângulo.")
 
+"""
+9. Faça um programa que pergunte o salário de um funcionário e calcule o aumento:
+10% se o salário for menor que 1000, senão, 5%.
+"""
+
+salario = float(input("Digite seu sálario: "))
+
+if salario < 1000:
+    aumento = (0.1*salario)+salario
+    print(f"Seu salário agora é R${aumento:.2f} reais seu aumento foi de R${aumento-salario:.2f} reais")
+else:
+    aumento = (0.05*salario)+salario
+    print(f"Seu salário agora é R${aumento:.2f} reais seu aumento foi de R${aumento-salario:.2f} reais")
+    
+
