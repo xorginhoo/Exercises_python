@@ -206,7 +206,28 @@ elif operador == '/':
         print("Erro: Divisão por zero não é permitida.")
 else:
     print("Operador inválido. Por favor, escolha entre +, -, * ou /.")
+    
+"""
+13. Faça um programa que calcule o IMC (Índice de Massa Corporal) a partir do
+peso e altura informados pelo usuário e classifique o resultado em: Abaixo do peso,
+Peso normal, Sobrepeso, Obesidade.
+"""
+peso = float(input("Digite seu peso: "))
+altura = float(input("Digite sua altura: (em metros) "))
 
+imc = peso/(altura**2)
+print(f"Seu IMC é: {imc:.2f}")
+
+if imc < 18.5:
+    classificacao = "Abaixo do peso"
+elif 18.5 <= imc < 24.9:
+    classificacao = "Peso normal"
+elif 25 <= imc < 29.9:
+    classificacao = "Sobrepeso"
+else:
+    classificacao = "Obesidade"
+
+print(f"Classificação: {classificacao}")
 
 
     
