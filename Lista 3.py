@@ -141,5 +141,18 @@ if salario < 1000:
 else:
     aumento = (0.05*salario)+salario
     print(f"Seu salário agora é R${aumento:.2f} reais seu aumento foi de R${aumento-salario:.2f} reais")
+
+"""
+10. Escreva um programa que pergunte o preço de um produto e aplique um
+desconto de 10% se o preço for maior que 100.
+"""
+vproduto = float(input("Digite o preço de um produto: "))
+
+if vproduto > 100:
+    vfinal = vproduto-(0.1*vproduto)
+    print(f"Valor final R${vfinal:.2f} reais")
+else:
+     print(f"Valor final R${vproduto:.2f} reais")
+
     
 
