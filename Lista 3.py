@@ -181,6 +181,33 @@ elif op == 'gasolina':
 else:
     print("Opção inválida. Por favor, digite 'alcool' ou 'gasolina'.")
 
+"""
+12. Crie um programa que pergunte dois números e um operador (+, -, *, /) e exiba o
+resultado da operação, tratando casos de divisão por zero.
+"""
+n1 = int(input("Digite um número: "))
+n2 = int(input("Digite outro número: "))
+operador = input("Digite o operador (+, -, *, /): ")
+
+if operador == '+':
+    resultado = n1 + n2
+    print(f"{n1} + {n2} = {resultado}")
+elif operador == '-':
+    resultado = n1 - n2
+    print(f"{n1} - {n2} = {resultado}")
+elif operador == '*':
+    resultado = n1 * n2
+    print(f"{n1} * {n2} = {resultado}")
+elif operador == '/':
+    if n2 != 0:
+        resultado = n1 / n2
+        print(f"{n1} / {n2} = {resultado}")
+    else:
+        print("Erro: Divisão por zero não é permitida.")
+else:
+    print("Operador inválido. Por favor, escolha entre +, -, * ou /.")
+
+
 
     
 
