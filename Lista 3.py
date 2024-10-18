@@ -154,5 +154,33 @@ if vproduto > 100:
 else:
      print(f"Valor final R${vproduto:.2f} reais")
 
+"""
+11.Desenvolva um programa que pergunte ao usuário se ele abasteceu com álcool
+ou gasolina e informe o preço final baseado no tipo de combustível (gasolina: 6.50,
+álcool: 5.00, considerando um desconto de 5% para álcool).
+"""
+
+preco_gasolina = 6.50
+preco_alcool = 5.00
+desconto_alcool = 0.05  
+
+op = input("Abasteceu com álcool ou gasolina? (escreva 'alcool' ou 'gasolina'): ").lower()
+
+if op == 'alcool':
+    qtda = float(input("Digite a quantidade de álcool (em litros): "))
+    valor_inicial = qtda * preco_alcool  
+    valor_desconto = valor_inicial * desconto_alcool  
+    preco_final = valor_inicial - valor_desconto 
+    print(f"Valor inicial: R$ {valor_inicial:.2f}")
+    print(f"Valor do desconto: R$ {valor_desconto:.2f}")
+    print(f"Valor final para {qtda} litros de álcool: R$ {preco_final:.2f}")
+elif op == 'gasolina':
+    qtda = float(input("Digite a quantidade de gasolina (em litros): "))
+    preco_final = qtda * preco_gasolina 
+    print(f"Valor final para {qtda} litros de gasolina: R$ {preco_final:.2f}")
+else:
+    print("Opção inválida. Por favor, digite 'alcool' ou 'gasolina'.")
+
+
     
 
